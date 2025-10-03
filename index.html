@@ -31,28 +31,36 @@
           <a href="./index.html" class="logo-header"
             >Web<span class="logo-header-accent">Studio</span></a
           >
+
           <ul class="navigation-link">
-            <li>
+            <li class="navigation-link-items">
               <a href="#studio" id="studio-header" class="link">Studio</a>
             </li>
-            <li>
+            <li class="navigation-link-items">
               <a href="#portfolio" id="portfolio-header" class="link"
                 >Portfolio</a
               >
             </li>
-            <li>
+            <li class="navigation-link-items">
               <a href="#contacts" id="contacts-header" class="link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="all-adresses flex-container">
+
+        <button class="menu-button" type="button">
+          <svg class="menu-icon" width="17" height="14">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <address class="all-adresses">
           <ul class="address-link">
-            <li>
+            <li class="address-link-items">
               <a href="mailto:info@devstudio.com" class="contacts"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="address-link-items">
               <a href="tel:+110001111111" class="contacts"
                 >+11 (000) 111-11-11</a
               >
@@ -63,14 +71,14 @@
     </header>
 
     <main>
-      <section class="main-title">
+      <!-- <section class="main-title">
         <div class="container">
           <h1 class="main-heading">Effective Solutions for Your Business</h1>
           <button type="button" class="button-hero">Order Service</button>
         </div>
-      </section>
+      </section> -->
 
-      <section id="studio" class="first-section">
+      <!-- <section id="studio" class="first-section">
         <div class="container">
           <h2 class="visually-hidden">How We Work</h2>
           <ul class="flex-list">
@@ -124,9 +132,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="flex-card">
@@ -300,9 +308,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section id="portfolio" class="portfolio-section">
+      <!-- <section id="portfolio" class="portfolio-section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-card">
@@ -422,10 +430,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer id="contacts" class="site-footer">
+    <!-- <footer id="contacts" class="site-footer">
       <div class="container footer-flexbox">
         <div class="footer-flex">
           <a href="./index.html" class="logo-footer"
@@ -488,10 +496,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="close-button" type="button">
           <svg class="button-icons-close" width="8" height="8">
@@ -565,16 +573,85 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the<a
-                href=""
-                class="policy-accent"
-                >Privacy Policy</a
-              >
+              <span class="review-form-policy-text"
+                >I accept the terms and conditions of the &nbsp;<a
+                  href=""
+                  class="policy-accent"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button class="send-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <!-- END MODAL WINDOW -->
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-wrapper is-hidden">
+      <div class="mobile-menu">
+        <button class="close-button" type="button">
+          <svg class="button-icons-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mobile-navigation-link">
+          <li class="mobile-navigation-link-items">
+            <a href="" id="studio-menu-mobile" class="link">Studio</a>
+          </li>
+          <li class="mobile-navigation-link-items">
+            <a href="" id="portfolio-menu-mobile" class="link">Portfolio</a>
+          </li>
+          <li class="mobile-navigation-link-items">
+            <a href="" id="contacts-menu-mobile" class="link">Contacts</a>
+          </li>
+        </ul>
+        <address class="mobile-all-adresses">
+          <ul class="mobile-address-link">
+            <li class="mobile-address-link-items">
+              <a href="mailto:info@devstudio.com" class="contacts-mobile"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-address-link-items">
+              <a href="tel:+110001111111" class="contacts-mobile"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-icons-box">
+          <li class="social-icons">
+            <a href="" class="link">
+              <svg class="soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="" class="link">
+              <svg class="soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="" class="link">
+              <svg class="soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="" class="link">
+              <svg class="soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END MOBILE MENU -->
   </body>
 </html>
